@@ -13,7 +13,7 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background: url("/gfx/bg.gif") repeat fixed 0 0 #DDDDDD;
   font: 13.34px Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
@@ -22,12 +22,21 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
-h1 { margin-bottom: 1em; }
+h1 {
+	margin-bottom: 1em;
+	font-size: 2.2em;
+}
+
+h2 {
+	margin-bottom: 0.8em;
+	font-size: 1.8em;
+}
+
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: #404040; }
+a:hover   { color: #616161; }
+a:visited { color: #404040; }
 
 table {
   font-size: inherit;
@@ -63,7 +72,7 @@ ul.posts span {
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 42em;
+  max-width: 900px;
   margin: 3em auto 2em;
   line-height: 1.5em;
 }
@@ -73,26 +82,49 @@ ul.posts span {
   text-decoration: none;
 }
 
-.site .header h1.title {
+.site .header h2.title {
   display: inline-block;
   margin-bottom: 2em;
 }
 
-.site .header h1.title a {
-  color: #a00;
+.site .header h2.title a {
+  color: #404040;
 }
 
-.site .header h1.title a:hover {
-  color: #000;
+.site .header h2.title a:hover {
+  color: #616161;
 }
 
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+.site .header .social {
+	float:right;
+}
+.site .header .social li {
+	float: left;
+	list-style: none;
 }
 
-.site .header a.extra:hover {
-  color: #000;
+.site .header .social li a {
+    background-size: 32px;
+    display:block;
+    text-indent:-9999px;
+	height:32px;
+    width:32px;
+}
+
+.site .header .social li.twitter a {
+	background-image:url(/icons/appbar.twitter.png);
+}
+
+.site .header .social li.github a {
+	background-image:url(/icons/appbar.github.png);
+}
+
+.site .header .social li.linkedin a {
+	background-image:url(/icons/appbar.linkedin.png);
+}
+
+.site .header .social li.rss a {
+	background-image:url(/icons/appbar.rss.png);
 }
 
 .site .meta {
@@ -105,15 +137,6 @@ ul.posts span {
   border-top: 4px solid #eee;
   margin-top: 2em;
   overflow: hidden;
-}
-
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.site .footer .contact a {
-  color: #8085C1;
 }
 
 .site .footer .rss {
@@ -135,7 +158,7 @@ ul.posts span {
 /* standard */
 .post pre {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #F7F7F7;
   padding: 0 .4em;
 }
 
@@ -145,7 +168,7 @@ ul.posts span {
 
 .post code {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #F7F7F7;
   padding: 0 .2em;
 }
 
