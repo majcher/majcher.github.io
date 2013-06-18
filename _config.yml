@@ -1,2 +1,10 @@
-name: Michał Majcherski
 pygments: true
+
+title : Michał Majcherski
+tagline: Blog
+author :
+  name : Michał Majcherski
+  email : mmajcherski@gmail.com
+  github : majcher
+  twitter : mmajcherski
+  linkedin: mmajcherski
