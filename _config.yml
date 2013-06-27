@@ -1,4 +1,5 @@
 pygments: true
+paginate: 5
 
 title : Michał Majcherski
 tagline: Blog

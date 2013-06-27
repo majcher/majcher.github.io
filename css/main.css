@@ -13,30 +13,26 @@
 html, body { height: 100%; }
 
 body {
-  background: url("/gfx/bg.gif") repeat fixed 0 0 #DDDDDD;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
-  text-align: center;
+  background: url("/gfx/binding_dark.png") repeat fixed 0 0 #DDDDDD;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 22px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
-
 h1 {
-	margin-bottom: 1em;
-	font-size: 2.2em;
+	font-size: 34px;
+	line-height: 34px;
 }
 
 h2 {
-	margin-bottom: 0.8em;
-	font-size: 1.8em;
+	font-size: 28px;
+	line-height: 28px;
 }
 
 p { margin: 1em 0; }
 
-a         { color: #404040; }
-a:hover   { color: #616161; }
-a:visited { color: #404040; }
+a { color: #B50000; text-decoration: none }
+a:hover { color: #D60000; text-decoration: underline }
 
 table {
   font-size: inherit;
@@ -48,19 +44,9 @@ table {
 /* Home
 /*
 /*****************************************************************************/
-ul.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
 
-ul.posts li {
-  line-height: 1.75em;
-}
-
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+.clear {
+	clear:both;
 }
 
 /*****************************************************************************/
@@ -69,30 +55,41 @@ ul.posts span {
 /*
 /*****************************************************************************/
 
+.container {
+	max-width: 900px;
+	min-height: 300px;
+	margin: 30px auto;
+}
+
 .site {
-  font-size: 115%;
   text-align: justify;
-  max-width: 900px;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+  border-top: 10px solid #FFBA24;
+  border-bottom: 10px solid #FFBA24;
+  background-color: #FFFFFF;
 }
 
-.site .header a {
-  font-weight: bold;
+.site h1, .site h2, .site h3, .site h4, .site h5, .site h6 {
+	font-family: 'Exo', sans-serif;
+	font-weight: normal;
+}
+
+.site .header {
+	background: url('/gfx/cream_pixels.png');
+	padding: 30px;
+	border-bottom: solid 1px #ddd;
+}
+
+.site .header .title a {
   text-decoration: none;
+  color: #000;
 }
 
-.site .header h2.title {
-  display: inline-block;
-  margin-bottom: 2em;
-}
-
-.site .header h2.title a {
-  color: #404040;
-}
-
-.site .header h2.title a:hover {
-  color: #616161;
+.site .header .title {
+	display: inline-block;
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0;
+	float: left;
 }
 
 .site .header .social {
@@ -127,15 +124,32 @@ ul.posts span {
 	background-image:url(/icons/appbar.rss.png);
 }
 
-.site .meta {
-  color: #aaa;
+.site .content {
+  padding: 0 30px;
+}
+
+.site .content .post-title {
+	font-weight: bold;
+	margin: 0;
+}
+
+.site .content .post-title a {
+	color: #000;
+}
+
+.site .content .post-title a:hover {
+	color: #D60000;
+}
+
+.site .content .post-meta {
+	color: #aaa;
+	font-family: 'Exo', sans-serif;
+	padding-bottom: 10px;
 }
 
 .site .footer {
-  font-size: 80%;
   color: #666;
   border-top: 4px solid #eee;
-  margin-top: 2em;
   overflow: hidden;
 }
 
@@ -154,6 +168,11 @@ ul.posts span {
 /* Posts
 /*
 /*****************************************************************************/
+
+.post {
+	padding: 20px 0;
+	border-bottom: dashed 1px #aaa;
+}
 
 /* standard */
 .post pre {
@@ -185,4 +204,18 @@ ul.posts span {
 
 .post pre.terminal code {
   background-color: #333;
+}
+.pagination {
+	padding: 20px 0;
+	position: relative
+}
+
+.pagination .older {
+	position: absolute;
+	left: 0;
+}
+
+.pagination .newer {
+	position: absolute;
+	right: 0;
 }
