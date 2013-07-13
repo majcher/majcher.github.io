@@ -1,0 +1,11 @@
+<div class="post">
+	<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	<div class="post-meta">
+		<span class="post-date">{{ post.date | date_to_string }}</span>
+		{% include article/tags.html %}
+	</div>
+
+	<div class="post-content">
+		{{ post.content }}
+	</div>
+</div>

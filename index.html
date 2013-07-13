@@ -1,32 +1,10 @@
 ---
 layout: default
-title: Blog
+title: Michał Majcherski
 ---
 
 {% for post in paginator.posts %}
-	<div class="post">
-		<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-		<p class="post-meta">{{ post.date | date_to_string }}</p>
-
-		<div class="post-content">
-			{{ post.content }}
-		</div>
-	</div>
+	{% include article.html %}
 {% endfor %}
 
-<!-- Pagination links -->
-<div class="pagination">
-	<div class="newer">
-	{% if paginator.previous_page == 1 %}
-		<a href="/">Newer posts</a>
-	{% elsif paginator.previous_page %}
-		<a href="/page{{ paginator.previous_page }}" class="previous">Newer posts</a>
-	{% endif %}
-	</div>
-	
-	<div class="older">
-	{% if paginator.next_page %}
-		<a href="/page{{ paginator.next_page }}" class="next">Older posts</a>
-	{% endif %}
-	</div>
-</div>
+{% include pagination.html %}

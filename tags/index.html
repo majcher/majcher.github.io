@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Tags"
+---
+
+<div id="tag-cloud" class="wordcloud">
+{% for tag in site.tags %}
+	<span data-weight="{{ tag[1] | size }}">{{ tag[0] }}</span>
+{% endfor %}
+</div>
+
+
+<script>
+	$(document).ready(function(){
+		$("#tag-cloud").awesomeCloud({
+			"size" : {
+				"grid" : 9,
+				"factor" : 30
+			},
+			"options" : {
+				"color" : "random-dark",
+				"rotationRatio" : 0.35
+			},
+			"font" : "'Times New Roman', Times, serif",
+			"shape" : "circle"
+		});
+	});
+</script>

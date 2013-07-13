@@ -14,19 +14,19 @@ html, body { height: 100%; }
 
 body {
   background: url("/gfx/binding_dark.png") repeat fixed 0 0 #DDDDDD;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 22px;
+  font-family: "PT Serif",Georgia,Times,"Times New Roman",serif;
+  font-size: 15px;
+  line-height: 1.6em;
 }
 
 h1 {
-	font-size: 34px;
-	line-height: 34px;
+	font-size: 2.4em;
+	line-height: 1.6em;
 }
 
 h2 {
-	font-size: 28px;
-	line-height: 28px;
+	font-size: 1.5em;
+	line-height: 1.6em;
 }
 
 p { margin: 1em 0; }
@@ -58,19 +58,22 @@ table {
 .container {
 	max-width: 900px;
 	min-height: 300px;
-	margin: 30px auto;
+	margin: 15px auto 0 auto;
+	padding-bottom: 40px
 }
 
 .site {
-  text-align: justify;
-  border-top: 10px solid #FFBA24;
-  border-bottom: 10px solid #FFBA24;
-  background-color: #FFFFFF;
+	clear:both;
+	text-align: justify;
+	border-top: 10px solid #FFBA24;
+	border-bottom: 10px solid #FFBA24;
+	background-color: #FFFFFF;
 }
 
 .site h1, .site h2, .site h3, .site h4, .site h5, .site h6 {
-	font-family: 'Exo', sans-serif;
+	color: #333;
 	font-weight: normal;
+	font-family: "PT Sans","Georgia","Helvetica Neue",Arial,sans-serif;
 }
 
 .site .header {
@@ -80,27 +83,28 @@ table {
 }
 
 .site .header .title a {
-  text-decoration: none;
-  color: #000;
+	font-family: "PT Sans","Georgia","Helvetica Neue",Arial,sans-serif;
+	text-decoration: none;
+	color: #000;
 }
 
 .site .header .title {
 	display: inline-block;
-	font-size: 22px;
+	font-size: 1.8em;
 	font-weight: normal;
 	margin: 0;
 	float: left;
 }
 
-.site .header .social {
+.social {
 	float:right;
 }
-.site .header .social li {
+.social li {
 	float: left;
 	list-style: none;
 }
 
-.site .header .social li a {
+.social li a {
     background-size: 32px;
     display:block;
     text-indent:-9999px;
@@ -108,20 +112,20 @@ table {
     width:32px;
 }
 
-.site .header .social li.twitter a {
-	background-image:url(/icons/appbar.twitter.png);
+.social li.twitter a {
+	background-image:url(/icons/appbar.twitter.white.png);
 }
 
-.site .header .social li.github a {
-	background-image:url(/icons/appbar.github.png);
+.social li.github a {
+	background-image:url(/icons/appbar.github.white.png);
 }
 
-.site .header .social li.linkedin a {
-	background-image:url(/icons/appbar.linkedin.png);
+.social li.linkedin a {
+	background-image:url(/icons/appbar.linkedin.white.png);
 }
 
-.site .header .social li.rss a {
-	background-image:url(/icons/appbar.rss.png);
+.social li.rss a {
+	background-image:url(/icons/appbar.rss.white.png);
 }
 
 .site .content {
@@ -129,12 +133,11 @@ table {
 }
 
 .site .content .post-title {
-	font-weight: bold;
 	margin: 0;
 }
 
 .site .content .post-title a {
-	color: #000;
+	color: #333;
 }
 
 .site .content .post-title a:hover {
@@ -143,8 +146,22 @@ table {
 
 .site .content .post-meta {
 	color: #aaa;
-	font-family: 'Exo', sans-serif;
 	padding-bottom: 10px;
+}
+
+.site .content .post-meta .post-date {
+	color: #555;
+}
+
+.site .content ul.tag_list {
+	display: inline;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.site .content ul.tag_list  li {
+	display:inline;
 }
 
 .site .footer {
@@ -161,6 +178,15 @@ table {
 
 .site .footer .rss img {
   border: 0;
+}
+
+.site .wordcloud {
+	height: 250px;
+	margin: 10px auto;
+	padding: 0;
+	page-break-after: always;
+	page-break-inside: avoid;
+	width: 80%;
 }
 
 /*****************************************************************************/
