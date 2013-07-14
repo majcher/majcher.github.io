@@ -1,4 +1,2 @@
-majcher.github.io
+Website/blog in Jekyll
 =================
-
-Michal Majcherski site/blog in Jekyll.
