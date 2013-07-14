@@ -16,7 +16,7 @@ body {
   background: url("/gfx/binding_dark.png") repeat fixed 0 0 #DDDDDD;
   font-family: "PT Serif",Georgia,Times,"Times New Roman",serif;
   font-size: 15px;
-  line-height: 1.6em;
+  line-height: 1.8em;
 }
 
 h1 {
@@ -29,7 +29,11 @@ h2 {
 	line-height: 1.6em;
 }
 
-p { margin: 1em 0; }
+p { margin: 0.8em 0; }
+
+p.indented {
+	text-indent: 25px;
+}
 
 a { color: #B50000; text-decoration: none }
 a:hover { color: #D60000; text-decoration: underline }
@@ -244,4 +248,13 @@ table {
 .pagination .newer {
 	position: absolute;
 	right: 0;
+}
+
+.about .gravatar {
+	float: left;
+	padding: 0 20px 20px 0;
+}
+
+.about p {
+	clear: both;
 }
