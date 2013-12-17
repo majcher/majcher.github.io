@@ -164,8 +164,12 @@ table {
 	padding:0;
 }
 
-.site .content ul.tag_list  li {
+.site .content ul.tag_list li {
 	display:inline;
+}
+
+.site .content ul.tag_list li .tag_name {
+	color: #B50000;
 }
 
 .site .footer {
