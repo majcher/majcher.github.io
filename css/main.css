@@ -236,6 +236,10 @@ table {
   border-left: 3px solid #ccc;
 }
 
+.post #disqus_thread {
+	margin-top: 25px;
+}
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
@@ -246,6 +250,7 @@ table {
 .post pre.terminal code {
   background-color: #333;
 }
+
 .pagination {
 	padding: 20px 0;
 	position: relative

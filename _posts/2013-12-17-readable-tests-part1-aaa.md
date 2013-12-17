@@ -2,7 +2,7 @@
 layout: post
 title:  "Tests readable like well-written prose.<br/>Part 1 - AAA / GWT rule."
 date:   2013-12-17 23:30:00
-categories: tests, cleancode
+categories: blog
 ---
 
 Spiltting a test into three code blocks, where you:
