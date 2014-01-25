@@ -219,11 +219,12 @@ table {
   margin-left: 1.35em;
 }
 
-.post code {
+.post .highlight {
   border: 1px solid #ddd;
   background-color: #F7F7F7;
   padding: 0 .2em;
   font-size: 80%;
+  line-height: 1.5em;
 }
 
 .post pre code {
