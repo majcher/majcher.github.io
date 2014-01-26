@@ -322,13 +322,21 @@ table {
 .about .book .cover {
     float: left;
     clear: left;
-    padding-right: 10px
+    padding-right: 10px;
+    width: 105px;
+    height: 105px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.about .book .description {
+    float:left
 }
 
 .about .book .title {
-    font-weight: bold;
+
 }
 
 .about .book .author {
-    font-style: italic;
+    font-size: .8em;
 }

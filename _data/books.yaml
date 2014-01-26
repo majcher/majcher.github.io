@@ -1,0 +1,60 @@
+---
+- title: "Linchpin: Are You Indispensable? How to drive your career and create a remarkable future"
+  author: "Seth Godin"
+  cover: "http://ecx.images-amazon.com/images/I/510Ak7VPp-L._SY100_.jpg"
+  url: "http://www.amazon.com/Linchpin-Indispensable-career-create-remarkable-ebook/dp/B00371V91S"
+
+- title: "The Dip: A Little Book That Teaches You When to Quit (and When to Stick)"
+  author: "Seth Godin"
+  cover: "http://ecx.images-amazon.com/images/I/41tw-Edvl9L.SY100.jpg"
+  url: "http://www.amazon.com/Dip-Little-Book-Teaches-Stick-ebook/dp/B000QCSA54"
+
+- title: "Kanban"
+  author: "David J. Anderson"
+  cover: "http://ecx.images-amazon.com/images/I/51hocASZ3bL._SY100_.jpg"
+  url: "http://www.amazon.com/Kanban-David-J-Anderson-ebook/dp/B0057H2M70"
+
+- title: "Clean Code: A Handbook of Agile Software Craftsmanship"
+  author: 'Robert C. “Uncle Bob” Martin'
+  cover: "http://ecx.images-amazon.com/images/I/41XojFFhYlL.SY100.jpg"
+  url: "http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship-ebook/dp/B001GSTOAM"
+
+- title: "The Clean Coder: A Code of Conduct for Professional Programmers"
+  author: 'Robert C. “Uncle Bob” Martin'
+  cover: "http://ecx.images-amazon.com/images/I/51MoTaVrS7L.SY100.jpg"
+  url: "http://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers-ebook/dp/B0050JLC9Y"
+
+- title: "Implementation Patterns"
+  author: 'Kent Beck'
+  cover: "http://ecx.images-amazon.com/images/I/51txB3L3foL.SY100.jpg"
+  url: "http://www.amazon.com/Implementation-Patterns-Kent-Beck-ebook/dp/B004UAALDW"
+
+- title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+  author: "Eric Evans"
+  cover: "http://ecx.images-amazon.com/images/I/51WLtI-uLcL.SY100.jpg"
+  url: "http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software-ebook/dp/B00794TAUG"
+
+- title: "Head First Design Patterns"
+  author: "Eric Freeman, Elisabeth Freeman, Kathy Sierra, Bert Bates"
+  cover: "http://ecx.images-amazon.com/images/I/514zoMhZFZL.SY100.jpg"
+  url: "http://www.amazon.com/Head-First-Design-Patterns-Freeman-ebook/dp/B00AA36RZY"
+
+- title: "Effective Java"
+  author: "Joshua Bloch"
+  cover: "http://ecx.images-amazon.com/images/I/51J1rHXaovL._SY100_.jpg"
+  url: "http://www.amazon.com/Effective-Java-2nd-Joshua-Bloch-ebook/dp/B000WJOUPA"
+
+- title: "Java Concurrency in Practice"
+  author: "Brian Goetz with Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes and Doug Lea"
+  cover: "http://ecx.images-amazon.com/images/I/51Xvq-8W6vL.SY100.jpg"
+  url: "http://www.amazon.com/Java-Concurrency-Practice-Tim-Peierls-ebook/dp/B004V9OA84"
+
+- title: "Practical Unit Testing with TestNG and Mockito"
+  author: "Tomasz Kaczanowski"
+  cover: "http://ecx.images-amazon.com/images/I/41oqR6PpBRL.SY100.jpg"
+  url: "http://www.amazon.com/Practical-Unit-Testing-TestNG-Mockito/dp/839348930X"
+
+- title: "JavaScript: The Good Parts: The Good Parts"
+  author: "Douglas Crockford"
+  cover: "http://ecx.images-amazon.com/images/I/511j6cza5bL.SY100.jpg"
+  url: "http://www.amazon.com/JavaScript-Good-Parts-ebook/dp/B0026OR2ZY"
