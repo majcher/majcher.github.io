@@ -6,42 +6,62 @@
 
 /* Global Reset */
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-html, body { height: 100%; }
+html, body {
+    height: 100%;
+}
 
 body {
-  background: url("/gfx/binding_dark.png") repeat fixed 0 0 #DDDDDD;
-  font-family: "PT Serif",Georgia,Times,"Times New Roman",serif;
-  font-size: 15px;
-  line-height: 1.8em;
+    background: url("/gfx/binding_dark.png") repeat fixed 0 0 #DDDDDD;
+    font-family: "PT Serif", Georgia, Times, "Times New Roman", serif;
+    font-size: .9em;
+    line-height: 1.8em;
 }
 
 h1 {
-	font-size: 2.4em;
-	line-height: 1.6em;
+    font-size: 2.0em;
+    line-height: 1.6em;
 }
 
 h2 {
-	font-size: 1.5em;
-	line-height: 1.6em;
+    font-size: 1.5em;
+    line-height: 1.6em;
     padding-top: 10px;
 }
 
-p { margin: 0.8em 0; }
-
-p.indented {
-	text-indent: 25px;
+@media only screen and (min-width: 900px) {
+    body {
+        font-size: .95em;
+    }
+    h1 {
+        font-size: 2.4em;
+    }
 }
 
-a { color: #B50000; text-decoration: none }
-a:hover { color: #D60000; text-decoration: underline }
+p {
+    margin: 0.8em 0;
+}
+
+p.indented {
+    text-indent: 25px;
+}
+
+a {
+    color: #B50000;
+    text-decoration: none
+}
+
+a:hover {
+    color: #D60000;
+    text-decoration: underline
+}
 
 table {
-  font-size: inherit;
-  font: 100%;
+    font-size: inherit;
+    font: 100%;
 }
 
 /*****************************************************************************/
@@ -51,7 +71,7 @@ table {
 /*****************************************************************************/
 
 .clear {
-	clear:both;
+    clear: both;
 }
 
 /*****************************************************************************/
@@ -61,141 +81,142 @@ table {
 /*****************************************************************************/
 
 .container {
-	max-width: 900px;
-	min-height: 300px;
-	margin: 15px auto 0 auto;
-	padding-bottom: 40px
+    max-width: 900px;
+    min-height: 300px;
+    margin: 15px auto 0 auto;
+    padding-bottom: 40px
 }
 
 .site {
-	clear:both;
-	text-align: justify;
-	border-top: 10px solid #FFBA24;
-	border-bottom: 10px solid #FFBA24;
-	background-color: #FFFFFF;
+    clear: both;
+    text-align: justify;
+    border-top: 10px solid #FFBA24;
+    border-bottom: 10px solid #FFBA24;
+    background-color: #FFFFFF;
 }
 
 .site h1, .site h2, .site h3, .site h4, .site h5, .site h6 {
-	color: #333;
-	font-weight: normal;
-	font-family: "PT Sans","Georgia","Helvetica Neue",Arial,sans-serif;
+    color: #333;
+    font-weight: normal;
+    font-family: "PT Sans", "Georgia", "Helvetica Neue", Arial, sans-serif;
 }
 
 .site .header {
-	background: url('/gfx/cream_pixels.png');
-	padding: 30px;
-	border-bottom: solid 1px #ddd;
+    background: url('/gfx/cream_pixels.png');
+    padding: 30px;
+    border-bottom: solid 1px #ddd;
 }
 
 .site .header .title a {
-	font-family: "PT Sans","Georgia","Helvetica Neue",Arial,sans-serif;
-	text-decoration: none;
-	color: #000;
+    font-family: "PT Sans", "Georgia", "Helvetica Neue", Arial, sans-serif;
+    text-decoration: none;
+    color: #000;
 }
 
 .site .header .title {
-	display: inline-block;
-	font-size: 1.8em;
-	font-weight: normal;
-	margin: 0;
-	float: left;
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 0;
+    float: left;
 }
 
 .social {
-	float:right;
+    float: right;
 }
+
 .social li {
-	float: left;
-	list-style: none;
+    float: left;
+    list-style: none;
 }
 
 .social li a {
     background-size: 32px;
-    display:block;
-    text-indent:-9999px;
-	height:32px;
-    width:32px;
+    display: block;
+    text-indent: -9999px;
+    height: 32px;
+    width: 32px;
 }
 
 .social li.twitter a {
-	background-image:url(/icons/appbar.twitter.white.png);
+    background-image: url(/icons/appbar.twitter.white.png);
 }
 
 .social li.github a {
-	background-image:url(/icons/appbar.github.white.png);
+    background-image: url(/icons/appbar.github.white.png);
 }
 
 .social li.linkedin a {
-	background-image:url(/icons/appbar.linkedin.white.png);
+    background-image: url(/icons/appbar.linkedin.white.png);
 }
 
 .social li.rss a {
-	background-image:url(/icons/appbar.rss.white.png);
+    background-image: url(/icons/appbar.rss.white.png);
 }
 
 .site .content {
-  padding: 0 30px;
+    padding: 0 30px;
 }
 
 .site .content .post-title {
-	margin: 0;
+    margin: 0;
 }
 
 .site .content .post-title a {
-	color: #333;
+    color: #333;
 }
 
 .site .content .post-title a:hover {
-	color: #D60000;
+    color: #D60000;
 }
 
 .site .content .post-meta {
-	color: #aaa;
-	padding-bottom: 10px;
+    color: #aaa;
+    padding-bottom: 10px;
 }
 
 .site .content .post-meta .post-date {
-	color: #555;
+    color: #555;
 }
 
 .site .content ul.tag_list {
-	display: inline;
-	list-style-type:none;
-	margin:0;
-	padding:0;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .site .content ul.tag_list li {
-	display:inline;
+    display: inline;
 }
 
 .site .content ul.tag_list li .tag_name {
-	color: #b58b15;
+    color: #b58b15;
 }
 
 .site .footer {
-  color: #666;
-  border-top: 4px solid #eee;
-  overflow: hidden;
+    color: #666;
+    border-top: 4px solid #eee;
+    overflow: hidden;
 }
 
 .site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
+    margin-top: 1.1em;
+    margin-right: -.2em;
+    float: right;
 }
 
 .site .footer .rss img {
-  border: 0;
+    border: 0;
 }
 
 .site .wordcloud {
-	height: 250px;
-	margin: 10px auto;
-	padding: 0;
-	page-break-after: always;
-	page-break-inside: avoid;
-	width: 80%;
+    height: 250px;
+    margin: 10px auto;
+    padding: 0;
+    page-break-after: always;
+    page-break-inside: avoid;
+    width: 80%;
 }
 
 /*****************************************************************************/
@@ -205,99 +226,102 @@ table {
 /*****************************************************************************/
 
 .post {
-	padding: 20px 0;
-	border-bottom: dashed 1px #aaa;
+    padding: 20px 0;
+    border-bottom: dashed 1px #aaa;
 }
 
 /* standard */
 .post pre {
-  background-color: #F7F7F7;
-  padding: 0.5em;
-  white-space: pre-wrap;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+    background-color: #F7F7F7;
+    padding: 0.5em;
+    white-space: pre-wrap;
+    border: 1px solid #ddd;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
 }
 
 .post pre, .post pre > code {
-  font-size: 80%;
-  line-height: 160%;
-  font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace !important;
+    font-size: .82em;
+    line-height: 160%;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !important;
 }
 
 @media only screen and (min-width: 900px) {
-  .post pre, .post pre > code {
-    font-size: 85%;
-  }
+    .post pre, .post pre > code {
+        font-size: .85em;
+    }
 }
 
 .post ul, .post ol {
-  margin-left: 1.35em;
+    margin-left: 1.35em;
 }
 
 .post .highlight {
-  border: 1px solid #ddd;
+
 }
 
 .post pre code {
-  border: none;
+    border: none;
 }
 
 .post blockquote {
-  font: 14px/22px normal helvetica, sans-serif;
-  font-style: italic;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  padding-left: 15px;
-  border-left: 3px solid #ccc;
+    font: 14px/22px normal helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
 }
 
 .post #disqus_thread {
-	margin-top: 25px;
+    margin-top: 25px;
 }
 
 /* terminal */
 .post pre.terminal {
-  border: 1px solid #000;
-  background-color: #333;
-  color: #FFF;
+    border: 1px solid #000;
+    background-color: #333;
+    color: #FFF;
 }
 
 .post pre.terminal code {
-  background-color: #333;
+    background-color: #333;
 }
 
 .pagination {
-	padding: 20px 0;
-	position: relative
+    padding: 20px 0;
+    position: relative
 }
 
 .pagination .older {
-	position: absolute;
-	left: 0;
+    position: absolute;
+    left: 0;
 }
 
 .pagination .newer {
-	position: absolute;
-	right: 0;
+    position: absolute;
+    right: 0;
 }
 
 .about .gravatar {
-	float: left;
-	padding: 0 20px 20px 0;
+    float: left;
+    padding: 0 20px 20px 0;
 }
 
 .about p {
-	clear: both;
+    clear: both;
 }
 
 .about .book {
-    clear:left;
+    clear: left;
     padding: 10px 0;
 }
 
 .about .book .cover {
-    float:left;
-    clear:left;
+    float: left;
+    clear: left;
     padding-right: 10px
 }
 
