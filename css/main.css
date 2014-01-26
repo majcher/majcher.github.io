@@ -27,6 +27,7 @@ h1 {
 h2 {
 	font-size: 1.5em;
 	line-height: 1.6em;
+    padding-top: 10px;
 }
 
 p { margin: 0.8em 0; }
@@ -210,9 +211,22 @@ table {
 
 /* standard */
 .post pre {
-  border: 1px solid #ddd;
   background-color: #F7F7F7;
-  padding: 0 .4em;
+  padding: 0.5em;
+  white-space: pre-wrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.post pre, .post pre > code {
+  font-size: 80%;
+  line-height: 160%;
+  font-family: Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace !important;
+}
+
+@media only screen and (min-width: 900px) {
+  .post pre, .post pre > code {
+    font-size: 85%;
+  }
 }
 
 .post ul, .post ol {
@@ -221,10 +235,6 @@ table {
 
 .post .highlight {
   border: 1px solid #ddd;
-  background-color: #F7F7F7;
-  padding: 0 .2em;
-  font-size: 80%;
-  line-height: 1.5em;
 }
 
 .post pre code {
@@ -278,4 +288,23 @@ table {
 
 .about p {
 	clear: both;
+}
+
+.about .book {
+    clear:left;
+    padding: 10px 0;
+}
+
+.about .book .cover {
+    float:left;
+    clear:left;
+    padding-right: 10px
+}
+
+.about .book .title {
+    font-weight: bold;
+}
+
+.about .book .author {
+    font-style: italic;
 }
