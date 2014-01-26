@@ -11,11 +11,13 @@ Lets look at sample Employee class:
 	
 {% highlight java %}
 public class Employee {
+
 	private String firstName;
 	private String lastName;
 	private Address address;
 	private Grade grade;
 	private BigDecimal remuneration;
+
 	...
 }
 {% endhighlight %}
@@ -33,6 +35,7 @@ Lets write (or rather generate) a builder!
 
 {% highlight java %}
 public final class Employee {
+
 	private final String firstName;
 	private final String lastName;
 	private final Address address;
