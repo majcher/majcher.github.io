@@ -20,11 +20,11 @@ public class Employee {
 }
 {% endhighlight %}
 
-I prefer to model classes in a way they are logically valid objects just after creation, so in case of class shown above I would like to:
+I model classes in a way they are logically valid objects just after creation, so in case of class shown above I would like to:
 
-- treat all fields as non-null,
-- assign all non-null values in a constructor
-- make class immutable
+- treat all fields as not nullable,
+- initialise all not nullable fields in a constructor
+- make the class immutable
 
 We could then make all fields final, add non-null checks and add a constructor, but constructor with 5 attributes, probably even more in the future, ... hmm.. no.
 
