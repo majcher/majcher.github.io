@@ -34,7 +34,7 @@ Lets write (or rather generate) a builder!
 
 
 {% highlight java %}
-public final class Employee {
+public class Employee {
 
 	private final String firstName;
 	private final String lastName;
@@ -42,18 +42,18 @@ public final class Employee {
 	private final Grade grade;
 	private final BigDecimal remuneration;
 
-	private Employee(String firstName, String lastName, Address address, Grade grade, BigDecimal remuneration) {
-		checkNotNull(firstName);
-		checkNotNull(lastName);
-		checkNotNull(address);
-		checkNotNull(grade);
-		checkNotNull(remuneration);
+	private Employee(Builder builder) {
+		checkNotNull(builder.firstName);
+		checkNotNull(builder.lastName);
+		checkNotNull(builder.address);
+		checkNotNull(builder.grade);
+		checkNotNull(builder.remuneration);
 
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.address = address;
-		this.grade = grade;
-		this.remuneration = remuneration;
+		this.firstName = builder.firstName;
+		this.lastName = builder.lastName;
+		this.address = builder.address;
+		this.grade = builder.grade;
+		this.remuneration = builder.remuneration;
 	}
 
 	public String getFirstName() {
@@ -109,7 +109,7 @@ public final class Employee {
 		}
 
 		public Employee build() {
-			return new Employee(firstName, lastName, address, grade, remuneration);
+			return new Employee(this);
 		}
 	}
 }
